@@ -14,6 +14,7 @@ public class CityOfAaron {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+           System.out.println(teamMember.BEN.getName() + " - " + teamMember.BEN.getTitle());
     }
     public enum teamMember {
      // The members of the enumeration
@@ -51,6 +52,6 @@ public class CityOfAaron {
     }
 
 }
-     System.out.println(teamMember.BEN.getName() + " - " + teamMember.BEN.getTitle());
+  
 
 }

@@ -16,13 +16,14 @@ import java.io.Serializable;
 
 
 public class Game implements Serializable {
-    Game myGame = newGame;   
+    Game myGame;   
 
     
-    private string thePlayer;
+    private final string thePlayer;
     private Game newGame;
     
-    public Game()  { }
+    public Game()  {this.myGame = newGame;
+ }
 
     public string player() 
     {

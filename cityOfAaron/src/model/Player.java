@@ -14,7 +14,7 @@ package model;
 
 
 public class Player implements Serializable {
-    Player myPlayer = newPlayer;   
+    Player myPlayer;   
 
     
     private string name;
