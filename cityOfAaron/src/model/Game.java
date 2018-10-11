@@ -4,7 +4,7 @@
  * Fall 2018
  *  Team members: Ben Labrum, Shayla Cooley, Adrienne Groll
  */
- */
+
 
 package model;
 
@@ -13,6 +13,7 @@ package model;
  * @author theag
  */
 import java.io.Serializable;
+
 
 public class Game implements Serializable {
     Game myGame = newGame;   
@@ -29,12 +30,16 @@ public class Game implements Serializable {
         return player;
      }
 
-    public void setPlayer(string_player) 
+   
+
     {
         string _player = null;
         thePlayer = _player;
      }
-
+    public String setPlayer(String name)
+    {
+        return name;
+    }
     private static class string {
 
         public string() {
