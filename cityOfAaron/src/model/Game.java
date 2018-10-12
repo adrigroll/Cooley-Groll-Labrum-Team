@@ -16,42 +16,19 @@ import java.io.Serializable;
 
 
 public class Game implements Serializable {
-    Game myGame;   
-
+    private final String thePlayer;
     
-    private final string thePlayer;
-    private Game newGame;
     
-    public Game()  {this.myGame = newGame;
- }
+    public Game()  { }
 
-    public string player() 
-    {
-        string player = null;
-        return player;
-     }
+    public Player getPlayer() 
+   { 
+      return thePlayer; 
+   }
 
-   
-
-    {
-        string _player = null;
-        thePlayer = _player;
-     }
-    public String setPlayer(String name)
-    {
-        return name;
-    }
-    private static class string {
-
-        public string() {
-        }
-    }
-
-    private static class string_player {
-
-        public string_player() {
-        }
-    }
-
-  
+    public void setPlayer(Player _thePlayer)
+   {
+      thePlayer = _thePlayer;
+   }
+    
 }

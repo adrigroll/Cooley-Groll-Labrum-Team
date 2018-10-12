@@ -7,6 +7,8 @@
 
 package model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author theag
@@ -14,16 +16,23 @@ package model;
 
 
 public class Player implements Serializable {
-    Player myPlayer;   
+        Player myPlayer;   
 
     
-    private string name;
-    private Player newPlayer;
+    private String name;
     
     public Player()  { }
 
+
  
+       public void getName()  {
+       
+}
+       public void setName(String myPlayer)  {
+        name=myPlayer;
+    }
    
       }
+ 
 
 

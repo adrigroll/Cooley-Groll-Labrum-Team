@@ -10,4 +10,8 @@ package model;
  *
  * @author theag
  */
-
+    public enum TeamMember {
+     // The members of the enumeration
+    BEN("Ben","The Brave"),
+    ADRIENNE("Adrienne","The Wise");
+}

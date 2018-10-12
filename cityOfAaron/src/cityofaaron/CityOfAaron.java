@@ -14,12 +14,14 @@ public class CityOfAaron {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-           System.out.println(teamMember.BEN.getName() + " - " + teamMember.BEN.getTitle());
+        Player player = new Player();
+        player.setName("Ben The Brave");
+                
+        Game game = new Game();
+        game.setPlayer(player);   
+        System.out.println(TeamMember.BEN.getName() + " - " + TeamMember.BEN.getTitle());
     }
-    public enum teamMember {
-     // The members of the enumeration
-    BEN("Ben","The Brave"),
-    ADRIENNE("Adrienne","The Wise");
+  
     
     
     //data members
@@ -31,7 +33,7 @@ public class CityOfAaron {
  // Purpose: initializes the values of name and color
  // Parameters: the name of the fruit and its color
  // Returns: none
- teamMember(String _name, String _title)
+ TeamMember(String _name, String _title)
  {
      name = _name;
      title = _title;
@@ -54,4 +56,4 @@ public class CityOfAaron {
 }
   
 
-}
+
