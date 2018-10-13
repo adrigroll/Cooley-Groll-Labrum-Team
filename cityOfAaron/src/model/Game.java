@@ -1,8 +1,8 @@
 /*
- * The player() class file for the cityOfAaron project
+ * The CityofAaron file for the cityOfAaron project
  * CIT-260
  * Fall 2018
- *  Team members: Ben Labrum, Shayla Cooley, Adrienne Groll
+ *  Team members: Ben Labrum, Adrienne Groll
  */
 
 
@@ -16,7 +16,7 @@ import java.io.Serializable;
 
 
 public class Game implements Serializable {
-    private final String thePlayer;
+    private Player thePlayer;
     
     
     public Game()  { }
