@@ -50,7 +50,7 @@ public class CropData {
         numberWhoDied = _numberWhoDied;
     }
     
-    public void setnewPeople(int _newPeople)
+    public void setNewPeople(int _newPeople)
     {
         newPeople = _newPeople;
     }

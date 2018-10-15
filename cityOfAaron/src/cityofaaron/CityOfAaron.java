@@ -30,17 +30,17 @@ public class CityOfAaron {
         System.out.println(joe.getDescription());
         System.out.println(joe.getSymbol());
         
-        //CropData cropData = new CropData();
-        //cropData.setNumberWhoDied("1");
-        //cropData.setNewPeople("2");
-        //cropData.setHarvest("3");
-        //cropData.setWheatForFood("4");
-        //cropData.setAcresPlanted("5");
-        //System.out.println(cropData.setNumberWhoDied());
-        //System.out.println(cropData.setNewPeople());
-        //System.out.println(cropData.setHarvest());
-        //System.out.println(cropData.setWheatForFood());
-        //System.out.println(cropData.setAcresPlanted());
+        CropData cropData = new CropData();
+        cropData.setNumberWhoDied(1);
+        cropData.setNewPeople(2);
+        cropData.setHarvest(3);
+        cropData.setWheatForFood(4);
+        cropData.setAcresPlanted(5);
+        System.out.println(cropData.getNumberWhoDied());
+        System.out.println(cropData.getNewPeople());
+        System.out.println(cropData.getHarvest());
+        System.out.println(cropData.getWheatForFood());
+        System.out.println(cropData.getAcresPlanted());
         
     }
   
