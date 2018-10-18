@@ -17,9 +17,42 @@ public class CropData {
     private int wheatForFood;
     private int acresPlanted;
     
+    /* Ben's Part*/
+    private int year;
+    private int population;
+    private int acresOwned;
+    private int wheatInStore;
+    private int cropYield;
 
-    public CropData (){}
+     public CropData (){}
         
+    public int getYear()
+    {
+	return year;
+    }
+
+public int getPopulation()
+    {
+	return population;
+    }
+
+public int getAcresOwned()
+    {
+	return acresOwned;
+    }
+
+    public int WheatInStore()
+    {
+	return wheatInStore;
+    }
+    
+        public int getCropYield()
+    {
+	return cropYield;
+    }
+    
+        /*Adriane*/
+      
     public int getNumberWhoDied()
     {
 	return numberWhoDied;
@@ -44,6 +77,8 @@ public class CropData {
     {
 	return acresPlanted;
     }
+    
+    /*Addriane*/
     
     public void setNumberWhoDied(int _numberWhoDied)
     {
@@ -70,4 +105,40 @@ public class CropData {
         acresPlanted = _acresPlanted;
     } 
     
-}
+    public void setWheatInStore(int _wheatInStore)
+    {
+        wheatInStore = _wheatInStore;
+    }
+    
+    /*Ben*/
+    
+        public void setYear(int _year)
+    {
+        year = _year;
+    }
+
+    public void setPopulation(int _population)
+    {
+        population = _population;
+    }
+
+public void setacresOwned(int _acresOwned)
+    {
+        acresOwned = _acresOwned;
+    }
+
+public void setcropYield(int _cropYield)
+    {
+        cropYield = _cropYield;
+    }
+
+public void setwheatInStore(int _wheatInStore)
+    {
+        wheatInStore = _wheatInStore;
+    } 
+
+    public boolean getWheatInStore() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    }
