@@ -45,6 +45,35 @@ public class CropControlTest {
         result = CropControl.buyLand(landPrice, acresToBuy, thedata);
         assertEquals(expResult, result);
 
+        System.out.println("buyLand test3");
+        landPrice = 20;
+        acresToBuy = -5;
+        
+        thedata.setWheatInStore(75);
+        thedata.setAcresOwned(50);
+        expResult = -1;
+        result = CropControl.buyLand(landPrice, acresToBuy, thedata);
+        assertEquals(expResult, result);
+        
+        System.out.println("buyLand test4");
+        landPrice = 10;
+        acresToBuy = 2000;
+        
+        thedata.setWheatInStore(2000);
+        thedata.setAcresOwned(200);
+        expResult = -1;
+        result = CropControl.buyLand(landPrice, acresToBuy, thedata);
+        assertEquals(expResult, result);
+        
+                System.out.println("buyLand test5");
+        landPrice = 10;
+        acresToBuy = 0;
+        
+        thedata.setWheatInStore(2000);
+        thedata.setAcresOwned(2000);
+        expResult = 2000;
+        result = CropControl.buyLand(landPrice, acresToBuy, thedata);
+        assertEquals(expResult, result);
     }
     
     
