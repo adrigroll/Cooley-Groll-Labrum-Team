@@ -7,10 +7,14 @@
 
 package cityofaaron;
 
+import java.util.Random;
 import model.*;
 public class CityOfAaron {
 
+    
+    
     private static int dozen;
+
 
     /**
      * @param args the command line arguments
@@ -40,9 +44,9 @@ public class CityOfAaron {
         cropData.setAcresPlanted(5);
         cropData.setYear(6);
         cropData.setPopulation(7);
-        cropData.setacresOwned(8);
+        cropData.setAcresOwned(8);
         cropData.setwheatInStore(9);
-        cropData.setcropYield(10);
+        cropData.setCropYield(10);
         System.out.println(cropData.getNumberWhoDied());
         System.out.println(cropData.getNewPeople());
         System.out.println(cropData.getHarvest());
@@ -61,10 +65,11 @@ public class CityOfAaron {
         System.out.println(apple.getNumber());
         
     }
-  
-    
-
 }
+  
+
+
+
   
 
 
