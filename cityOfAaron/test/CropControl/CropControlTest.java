@@ -76,6 +76,43 @@ public class CropControlTest {
         assertEquals(expResult, result);
     }
     
+    public void testSetOffering() {
+        System.out.println("setOffering");
+        int setOffering = 20;
+        CropData thedata = new CropData();
+        thedata.setOffering (20);
+        int expResult = 20;
+        int result = CropControl.setOffering(setOffering, thedata);
+        assertEquals(expResult, result);
+        
+        System.out.println("setOffering test2");
+        setOffering = 50;
+        thedata.setOffering (50);
+        expResult = 50;
+        result = CropControl.setOffering(setOffering, thedata);
+        assertEquals(expResult, result);
+        
+        System.out.println("setOffering test3");
+        setOffering = 60;
+        thedata.setOffering (60);
+        expResult = 60;
+        result = CropControl.setOffering(setOffering, thedata);
+        assertEquals(expResult, result);
+        
+        System.out.println("setOffering test4");
+        setOffering = 28;
+        thedata.setOffering (28);
+        expResult = 28;
+        result = CropControl.setOffering(setOffering, thedata);
+        assertEquals(expResult, result);
+                
+        System.out.println("setOffering test5");
+        setOffering = 90;
+        thedata.setOffering (90);
+        expResult = 90;
+        result = CropControl.setOffering(setOffering, thedata);
+        assertEquals(expResult, result);
+        
     
-    
+}
 }
