@@ -5,7 +5,7 @@
  */
 package CropControl;
 
-import CropControl.*;
+import Control.CropControl;
 import model.CropData;
 import org.junit.Test;
 import static org.junit.Assert.*;

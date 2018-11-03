@@ -15,10 +15,16 @@ package model;
 import java.io.Serializable;
 
 
+
 public class Game implements Serializable {
+   
     private Player thePlayer;
+    private int cropData;
+    private int animals;
+    private int tools;
+    private int provisions;
     
-    
+        
     public Game()  { }
 
     public Player getPlayer() 
@@ -31,4 +37,33 @@ public class Game implements Serializable {
       thePlayer = _thePlayer;
    }
     
+    public void setCropData(int _cropData)
+    {
+      cropData = _cropData;
+    }  
+    public int getCropData() {
+       return cropData;
+    }
+    public void setAnimals(int _animals)
+    {
+      animals = _animals;
+    }  
+    public int getAnimals() {
+       return animals;
+    }
+    public void setTools(int _tools)
+    {
+      tools = _tools;
+    }  
+    public int getTools() {
+       return tools;
+    }
+    public void setProvisions(int _provisions)
+    {
+      provisions = _provisions;
+    }  
+    public int getProvisions(){
+       return provisions;
+    }
+
 }

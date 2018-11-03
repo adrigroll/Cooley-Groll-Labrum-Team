@@ -7,19 +7,28 @@
 
 package cityofaaron;
 
-import java.util.Random;
 import model.*;
+import view.*;
+
 public class CityOfAaron {
 
-    
-    
+    private static Game theGame = null;
+
     private static int dozen;
+    private static int cropData;
 
 
     /**
      * @param args the command line arguments
      */
+    // main function - entry point for the program
+    // runs the main menu
     public static void main(String[] args) {
+        
+        MainMenuView mmv = new MainMenuView();
+        mmv.displayMenuView();       
+
+
         // TODO code application logic here
         Player player = new Player();
         player.setName("Ben The Brave");
@@ -27,6 +36,18 @@ public class CityOfAaron {
         Game game = new Game();
         game.setPlayer(player);
         System.out.println(game.getPlayer().getName());
+        
+        Game myGame = new Game();
+        myGame.setPlayer(player);
+        myGame.setCropData(cropData);
+        myGame.setAnimals(1);
+        myGame.setTools(2);
+        myGame.setProvisions(3);
+        System.out.println(myGame.getPlayer());
+        System.out.println(myGame.getCropData());
+        System.out.println(myGame.getAnimals());
+        System.out.println(myGame.getTools());
+        System.out.println(myGame.getProvisions());
         
         System.out.println(TeamMember.BEN.getName() + " - " + TeamMember.BEN.getTitle());
         
@@ -63,7 +84,13 @@ public class CityOfAaron {
         apple.setNumber(dozen);
         System.out.println(apple.getName());
         System.out.println(apple.getNumber());
+
+
         
+    }
+
+    public static void setGame(Game game) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
   
