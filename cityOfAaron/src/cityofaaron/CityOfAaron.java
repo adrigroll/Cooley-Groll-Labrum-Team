@@ -47,6 +47,7 @@ public class CityOfAaron {
         cropData.setAcresOwned(8);
         cropData.setwheatInStore(9);
         cropData.setCropYield(10);
+
         System.out.println(cropData.getNumberWhoDied());
         System.out.println(cropData.getNewPeople());
         System.out.println(cropData.getHarvest());
@@ -56,8 +57,8 @@ public class CityOfAaron {
         System.out.println(cropData.getPopulation());
         System.out.println(cropData.getAcresOwned());
         System.out.println(cropData.getWheatInStore());
-        System.out.println(cropData.getCropYield());        
-     
+        System.out.println(cropData.getCropYield()); 
+      
         ListItem apple = new ListItem();
         apple.setName("Granny Smith");
         apple.setNumber(dozen);

@@ -24,6 +24,8 @@ public class CropData {
     private int acresOwned;
     private int wheatInStore;
     private int cropYield;
+    private int feedPeople;
+
 
      public CropData (){}
     
@@ -43,7 +45,7 @@ public int getAcresOwned()
 	return acresOwned;
     }
 
-    public int WheatInStore()
+    public int getWheatInStore()
     {
 	return wheatInStore;
     }
@@ -52,7 +54,7 @@ public int getAcresOwned()
     {
 	return cropYield;
     }
-    
+          
         /*Adrienne*/
       
     public int getNumberWhoDied()
@@ -84,7 +86,12 @@ public int getAcresOwned()
     {
         return offering;
     }
-    /*Adrienne*/
+    
+    public int getFeedPeople()
+    {        
+         return feedPeople;
+    }
+         /*Adrienne*/
     
     public void setNumberWhoDied(int _numberWhoDied)
     {
@@ -121,6 +128,11 @@ public int getAcresOwned()
         offering = _offering;
     }
     
+    public void setFeedPeople(int _feedPeople)
+    {
+        feedPeople = _feedPeople;
+    }
+    
     /*Ben*/
     
         public void setYear(int _year)
@@ -146,11 +158,6 @@ public void setCropYield(int _cropYield)
 public void setwheatInStore(int _wheatInStore)
     {
         wheatInStore = _wheatInStore;
-    } 
-
-    public int getWheatInStore() {
-       return wheatInStore;
     }
-
-
-    }
+    
+}

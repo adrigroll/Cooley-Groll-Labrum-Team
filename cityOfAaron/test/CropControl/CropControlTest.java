@@ -5,7 +5,6 @@
  */
 package CropControl;
 
-import CropControl.*;
 import model.CropData;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -112,7 +111,21 @@ public class CropControlTest {
         expResult = 90;
         result = CropControl.setOffering(setOffering, thedata);
         assertEquals(expResult, result);
+    }
         
-    
+    //Ben//
+    public void testFeedPeople(){    
+    System.out.println("feedPeople Test 1");
+        int setPopulation = 5;
+        CropData thedata = new CropData();
+        thedata.setWheatInStore (250);
+        int setWheatforfood = 5;
+        int expResult = 245;
+        int result = CropControl.feedPeople(setPopulation, setWheatForFood,setWheatInStore, thedata);
+        assertEquals(expResult, result);
+        
+     
+        
+        
 }
 }
