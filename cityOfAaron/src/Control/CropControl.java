@@ -72,7 +72,19 @@ public static int buyLand(int landPrice, int acresToBuy, CropData thedata)
         return setOffering;
     }
 
+ /*Ben*/   
+    public static int feedPeople(int setWheatForFood, int setWheatInStore, int setpopulation, CropData thedata)
+    
+    {
+        if (setWheatInStore < 0)
+             return -1;
 
-}    
+        if (setWheatForFood > setWheatInStore)
+            return -1;
+
+        return setWheatInStore;
+    }    
+
+    }    
 
 
