@@ -83,8 +83,32 @@ public static int buyLand(int landPrice, int acresToBuy, CropData thedata)
             return -1;
 
         return setWheatInStore;
-    }    
+    } 
+    
+    /* Gavin*/
+    // The plantCrops method.
+    // Purpose: plant the crops.
+    // Parameters: the number of acres of land that the player wants to plant.
+    // Returns: must return a positive number. Returns the remaining number
+    // of wheat in store. If there's an error, an exception is throw.
+    // Pre-conditions: number of wheat in store and acres must be enough for 
+    // user to plant the crops.
+    public int plantCrops(int acresToPlant, int acresOwned, int wheatInStore, CropData cropData)
+    {
 
+        //If acresToPlant > acresOwned then, return -1
+        int owned = cropData.getAcresOwned();
+        if (acresToPlant > acresOwned) 
+            return -1;
+
+        //Also, if acresToPlant > wheatInStore then, return -1
+        owned = cropData.getWheatInStore();
+        if (acresToPlant > wheatInStore) 
+            return -1;
+
+        //return acresOwned
+        return acresOwned;
+        }
     }    
 
 
