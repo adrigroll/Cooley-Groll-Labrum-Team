@@ -1,4 +1,4 @@
-package CropControl;
+package Control;
 
 /*
  * The CityofAaron file for the cityOfAaron project
@@ -27,10 +27,6 @@ public class CropControl
 * return the number of acres left after the sale
 * Pre-conditions: acres to buy must be positive
 * and <= the number of acres owned
-     * @param landPrice
-     * @param acresToBuy
-     * @param thedata
-     * @return 
 */    
 public static int buyLand(int landPrice, int acresToBuy, CropData thedata)
 {
@@ -76,22 +72,7 @@ public static int buyLand(int landPrice, int acresToBuy, CropData thedata)
         return setOffering;
     }
 
- /*Ben*/   
-    public static int feedPeople(int setWheatForFood, int setWheatInStore, int setpopulation, CropData thedata)
-    
-    {
-        if (setWheatInStore < 0)
-             return -1;
 
-        if (setWheatForFood > setWheatInStore)
-            return -1;
-
-        return setWheatInStore;
-    }    
-
-    
-
-
-    }
+}    
 
 
