@@ -95,13 +95,12 @@ public static int buyLand(int landPrice, int acresToBuy, CropData thedata)
     // user to plant the crops.
     public int plantCrops(int acresToPlant, int acresOwned, int wheatInStore, CropData cropData)
     {
-
-        int owned = cropData.getAcresOwned();
+        int acreOwned = cropData.getAcresOwned();
         if (acresToPlant > acresOwned) 
             return -1;
 
-        owned = cropData.getWheatInStore();
-        if (acresToPlant > wheatInStore) 
+        int wheatOwned = cropData.getWheatInStore();
+        if (acresToPlant * 2 > wheatInStore) 
             return -1;
 
         return acresOwned;
