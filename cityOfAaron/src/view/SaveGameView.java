@@ -25,8 +25,8 @@ public SaveGameView()
                    "* CITY OF AARON: SAVED GAME MENU  *\n" +
                    "* Select a saved game*\n" +
                    "**********************************\n" +
-                   " 1 - Saved Game 1\n" +
-                   " 2 - Saved Game 2\n" +
+                   " 1 - Save Game 1\n" +
+                   " 2 - Save Game 2\n" +
                    " 3 - Get help on playing the game\n" +
                    " 4 - Main Menu\n" +
                    " 5 - Quit\n";
