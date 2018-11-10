@@ -17,28 +17,6 @@ import cityofaaron.CityOfAaron;
 
 public class CropView {
     
-    //ADRIENNE GROLL//
-    //The setOfferingView method
-    // Purpose: The method to allocate a percentage of the harvest to be paid as an offering
-    // Parameters: none
-    // Returns: none
-    //Stores: setOffering in the CropData object
-    
-    public void setOfferingView() 
-    {
-        Scanner keyboard = new Scanner(System.in);
-
-
-    int offering = CropControl.setOffering();
-    
-    system.out.println("\nWhat percentage of the harvest do you want to pay as an offering?");
-            
-        //  Get the user’s input and save it.
-        int offering;
-        offering = keyboard.nextInt();
-        
-        CropControl.setOffering(offering, cropData);
-            } 
     
     // The buyLandView method
     // Purpose: interface with the user input for buying land
@@ -58,5 +36,4 @@ public class CropView {
         
         CropControl.buyLand(price, toBuy, cropData);
         }
-    
-}
+    }
