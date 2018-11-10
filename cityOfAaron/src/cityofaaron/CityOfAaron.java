@@ -28,6 +28,7 @@ public class CityOfAaron {
         MainMenuView mmv = new MainMenuView();
         mmv.displayMenuView();       
 
+        
 
         // TODO code application logic here
         Player player = new Player();
