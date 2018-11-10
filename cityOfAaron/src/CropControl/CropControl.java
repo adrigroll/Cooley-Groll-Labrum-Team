@@ -89,6 +89,10 @@ public static int buyLand(int landPrice, int acresToBuy, CropData thedata)
         return setWheatInStore;
     }    
 
+    public static int setOffering() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     
 
 

@@ -27,6 +27,10 @@ public class CropControl
 * return the number of acres left after the sale
 * Pre-conditions: acres to buy must be positive
 * and <= the number of acres owned
+     * @param landPrice
+     * @param acresToBuy
+     * @param thedata
+     * @return 
 */    
 public static int buyLand(int landPrice, int acresToBuy, CropData thedata)
 {

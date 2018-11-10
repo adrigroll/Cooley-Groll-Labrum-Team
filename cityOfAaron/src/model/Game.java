@@ -23,6 +23,7 @@ public class Game implements Serializable {
     private int animals;
     private int tools;
     private int provisions;
+    private CropData _cropData;
     
         
     public Game()  { }
@@ -36,11 +37,9 @@ public class Game implements Serializable {
    {
       thePlayer = _thePlayer;
    }
-    
-    public void setCropData(int _cropData)
-    {
-      cropData = _cropData;
-    }  
+      public void setCropData(CropData cropData) {
+     cropData = _cropData;   
+    }
     public int getCropData() {
        return cropData;
     }
@@ -64,6 +63,10 @@ public class Game implements Serializable {
     }  
     public int getProvisions(){
        return provisions;
+    }
+
+    public void setCropData(int cropData) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
